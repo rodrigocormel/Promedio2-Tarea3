@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface iObserver
 {
-    public abstract void Execute(ISubject subject);
+    public void Execute(ISubject subject);
 
 }

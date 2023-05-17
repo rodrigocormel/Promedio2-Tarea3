@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManagerUI : MonoBehaviour, ISubjectUI
+public class GameManagerUI : MonoBehaviour, ISubject
 {
     private static GameManagerUI instance;
     private int playerLife;
@@ -49,12 +49,12 @@ public class GameManagerUI : MonoBehaviour, ISubjectUI
         return instance;
     }
 
-    public void Attach(IObserverUI observerUI)
+    public void Attach(IObserver observer)
     {
         
     }
-    public void Remove(IObserverUI observerUI)
+    public void Remove(IObserver observer)
     {
-        throw new System.NotImplementedException();
+       
     }
 }
